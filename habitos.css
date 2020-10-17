@@ -12,6 +12,14 @@ body {
     font-weight: normal;
 }
 
+.logo {
+    position: absolute;
+width: 190px;
+height: 190px;
+left: 1000px;
+top: 10px;
+}
+
 .card {
     background-color: #F07907;
 }
