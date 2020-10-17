@@ -33,7 +33,7 @@
                                 <h2 class='topico'>Açúcares e processados</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo()'>
+                                <img id='1' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -50,7 +50,7 @@
                                 <h2 class='topico'>Carnes e derivados</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg'>
+                                <img id='2' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -67,7 +67,7 @@
                                 <h2 class='topico'>Desperdício</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg'>
+                                <img id='3' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -84,7 +84,7 @@
                                 <h2 class='topico'>Restrições alimentares</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg'>
+                                <img id='4' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -101,7 +101,7 @@
                                 <h2 class='topico'>Pegada ecológica</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg'>
+                                <img id='5' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -117,8 +117,9 @@
         </div>
 
         <script type='text/javascript'>
-            function mostraConteudo() {
-                $('.topico1-conteudo').show()
+            function mostraConteudo(id) {
+                classe = '.topico' + id + '-conteudo';
+                $(classe).show()
             }
         
         </script>
