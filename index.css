@@ -1,0 +1,129 @@
+
+body {
+   
+    background-color:  #fbb02d;
+    font-family: Helvetica, arial, sans-serif;
+    color: #5C8001;
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+.general-container{
+    background-color:#fbb02d;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: auto;
+}
+
+.navbar{
+
+    margin: 1%;
+}
+
+
+.container{
+
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+}
+
+.logo{
+    margin-top: 2%;
+    position: absolute;
+    width: 453px;
+    height: 446px;
+    left: 230px;
+    top: -42px;
+}
+
+.frase{
+    position: absolute;
+    width: 581px;
+    height: 154px;
+    left: 680px;
+    top: 110px;
+
+
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 81px;
+    color: #FFFFFF;
+}
+
+.descricao{
+    position: absolute;
+    width: 774px;
+    height: 287px;
+    left: 48px;
+    top: 430px;
+    
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 69px;
+    text-align: center;
+    
+    
+    color: #5C8001;
+}
+
+.botao1{
+    position: absolute;
+    width: 340px;
+    height: 75px;
+    left: 902px;
+    top: 437px;
+    background: rgba(92, 128, 1, 0.88);
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.textobt1{
+    position: absolute;
+    width: 340px;
+    height: 56px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 71px;
+    color: #FFFFFF;
+}
+
+.botao2{
+    position: absolute;
+    width: 296px;
+    height: 122px;
+    left: 921px;
+    text-align: center;
+    top: 561px;
+    background: rgba(92, 128, 1, 0.88);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.textobt2{
+    position: absolute;
+    width: 229px;
+    height: 124px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 61px;
+    color: #FFF3F3;
+}
+
+
