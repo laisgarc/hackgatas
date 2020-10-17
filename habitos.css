@@ -1,0 +1,33 @@
+body {
+   
+    background-color:  #E5E5E5;
+    font-family: Helvetica, arial, sans-serif;
+    color: #332D2D;
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+.card {
+    background-color: #F07907;
+}
+
+.form-card{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.topico {
+    background-color:  #E5E5E5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+}
