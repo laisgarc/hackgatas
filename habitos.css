@@ -54,3 +54,9 @@ p {
 
     border: 3px
 }
+
+.botao{
+    border: none;
+    background-color: #F07907;
+    border-radius: 8px;
+}
