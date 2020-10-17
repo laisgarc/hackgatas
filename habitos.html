@@ -33,7 +33,8 @@
                                 <h2 class='topico'>Açúcares e processados</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img id='1' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='1' class='seta seta-para-baixo1' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='1' style='display:none' class='seta seta-para-cima1' src='imgs/Icones/seta-para-cima.svg' onclick='escondeConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -50,7 +51,8 @@
                                 <h2 class='topico'>Carnes e derivados</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img id='2' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='2' class='seta seta-para-baixo2' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='2' style='display:none' class='seta seta-para-cima2' src='imgs/Icones/seta-para-cima.svg' onclick='escondeConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -67,7 +69,8 @@
                                 <h2 class='topico'>Desperdício</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img id='3' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='3' class='seta seta-para-baixo3' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='3' style='display:none' class='seta seta-para-cima3' src='imgs/Icones/seta-para-cima.svg' onclick='escondeConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -84,7 +87,8 @@
                                 <h2 class='topico'>Restrições alimentares</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img id='4' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='4' class='seta seta-para-baixo4' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='4' style='display:none' class='seta seta-para-cima4' src='imgs/Icones/seta-para-cima.svg' onclick='escondeConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -101,7 +105,8 @@
                                 <h2 class='topico'>Pegada ecológica</h2>
                             </div>
                             <div class='col-md-1'>
-                                <img id='5' class='seta-para-baixo' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='5' class='seta seta-para-baixo5' src='imgs/Icones/seta-para-baixo.svg' onclick='mostraConteudo(this.id)'>
+                                <img id='5' style='display:none' class='seta seta-para-cima5' src='imgs/Icones/seta-para-cima.svg' onclick='escondeConteudo(this.id)'>
                             </div>
                         </div>
 
@@ -120,6 +125,15 @@
             function mostraConteudo(id) {
                 classe = '.topico' + id + '-conteudo';
                 $(classe).show()
+                $('.seta-para-baixo' + id).hide()
+                $('.seta-para-cima' + id).show()
+            }
+
+            function escondeConteudo(id) {
+                classe = '.topico' + id + '-conteudo';
+                $(classe).hide()
+                $('.seta-para-baixo' + id).show()
+                $('.seta-para-cima' + id).hide()
             }
         
         </script>
