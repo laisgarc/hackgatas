@@ -1,0 +1,70 @@
+body{
+    background-color:  #E5DBAF;
+    font-family: Helvetica, arial, sans-serif;
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+    font-style: normal;
+    font-weight: normal;
+}
+.general-container{
+    background-color:#E5DBAF;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: auto;
+}
+.perfil{
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+}
+.coletivos{
+    /* Coletivos */
+
+
+    position: absolute;
+    width: 334px;
+    height: 97px;
+    left: 199px;
+    top: 78px;
+
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 69px;
+    text-align: center;
+
+    color: #F07907;
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+}
+.perfil{
+    /* Perfis */
+    position: absolute;
+    width: 334px;
+    height: 97px;
+    left: 859px;
+    top: 70px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 69px;
+    text-align: center;
+    color: #F07907;
+}
+.textos{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+}
