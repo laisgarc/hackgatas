@@ -59,6 +59,7 @@ a{
     color: #5c8011; 
 }
 
+
 ul{
     list-style-type: none;
     margin: 0;
@@ -112,7 +113,9 @@ h1 {
 .topico {
     background-color:  #E5E5E5;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 0px;
+    padding-left: 12px;
+    padding-bottom: 5px;
     position: relative;
 }
 
@@ -124,12 +127,13 @@ p {
 .seta {
     position: relative;
     height: 40px;
-    margin: auto;
+    
     z-index: 2;
 
     border: 3px;
     cursor: pointer;
 }
+
 
 .botao{
     text-align: center;
@@ -144,8 +148,20 @@ p {
     color: #332D2D;
 }
 
+.col-md-1{
+    margin-top: 1%;
+}
+
+
 @media (max-width: 992px) {
     .logo {
         left: 70%;
     }
+    
+    .body{
+        height: 100%;
+        width: 80%;
+        position: absolute;
+    }
+    
 }
