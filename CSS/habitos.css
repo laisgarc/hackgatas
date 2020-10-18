@@ -64,4 +64,6 @@ p {
     background-color: #F07907;
     border-radius: 8px;
     font-size: x-large;
+    text-decoration: none;
+    color: #332D2D;
 }
