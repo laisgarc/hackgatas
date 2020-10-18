@@ -22,8 +22,29 @@ body{
 
 }
 .navbar{
-    width:5%;
+    
     margin: 1%;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    padding-left: 50px;
+    display:block;
+    margin-top: 2px;
+    color: #5C8001;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Jost;
 }
 .colunas{
     display: inline-block;
@@ -42,9 +63,11 @@ body{
     line-height: 69px;
     text-align: center;
     margin-left:70px;
+    margin-top:4%;
     color: #F07907;
 }
 .perfil{
+    margin-top:10.5%;
     /* Perfis */
     display:block;
     border-radius: nullpx;
