@@ -1,15 +1,45 @@
 body {
-   
-    background-color:  #E5E5E5;
-    font-family: Helvetica, arial, sans-serif;
+    background-color:  #E5E5E5; 
     color: #332D2D;
+    font-family:Jost;
+    font-style: normal;
+}
+
+.navbar{
+    
+    margin: 1%;
+}
+.fas, .fa{
+    color: #5c8001;
+    position: absolute;
+    font-size:25px;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    text-decoration: none;
+}
+
+li a{
+    padding-left: 50px;
+    display:block;
+    margin-top: 2px;
+    color: #5C8001;
+    
     @font-face {
         font-family: Jost;
         src: url(indestructibletype.com/fonts/Jost.css);
     }
-
-    font-style: normal;
-    font-weight: normal;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .logo {

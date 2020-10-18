@@ -11,10 +11,12 @@ body {
 
     font-style: normal;
     font-weight: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .fas, .fa{
-    color: #5c8001;
+    color: #ffffff;
     position: absolute;
     font-size:25px;
 
@@ -29,7 +31,8 @@ body {
 }
 
 .navbar{
-    margin: 1%;
+    margin-top:0;
+    margin-left: 1%;
 }
 
 .dropdown{
@@ -42,7 +45,7 @@ body {
     display: none;
     position: absolute;
     width: 100%;
-    color: #5c8001;
+    color: #ffffff;
     min-width: 160px;
     font-family: Jost;
     font-weight: normal;
@@ -65,40 +68,40 @@ body {
 .logo{
     margin-top: 5%;
     position: absolute;
-    width: 400px;
-    height: 400px;
-    left: 230px;
-    top: -42px;
+    width: 30%;
+    height: auto;
+    left: 20%;
+    top: -8%;
 }
 
 .frase{
     position: absolute;
-    width: 581px;
-    height: 154px;
-    left: 680px;
-    top: 110px;
-
+    width: 40%;
+    height: auto;
+    left: 52%;
+    top: 18%;
+    text-align: center;
 
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
     font-size: 45px;
-    line-height: 81px;
+    line-height: 200%;
     color: #FFFFFF;
 }
 
 .descricao{
     position: absolute;
-    width: 700px;
-    height: 240px;
-    left: 118px;
-    top: 415px;
+    width: 55%;
+    height: 200%;
+    left: 8%;
+    top: 63%;
     bottom:0;
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
-    line-height: 69px;
+    font-size: 150%;
+    line-height: 220%;
     text-align: center;
     
     color: #5C8001;
@@ -106,51 +109,53 @@ body {
 
 .botao1{
     position: absolute;
-    width: 250px;
-    height: 65px;
-    left: 942px;
-    top: 437px;
-    bottom: 100px;
+    width: 19%;
+    height: 9%;
+    left: 71%;
+    top: 67%;
+    bottom: 27%;
     background: rgba(92, 128, 1, 0.88);
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
+    align-items: center;
 }
 
 .textobt1{
     position: absolute;
-    width: 250px;
-    height: 56px;
+    width: 100%;
+    text-align:center;
+    height: auto;
     font-family: Jost;
     font-style: normal;
     font-weight: 300;
-    font-size: 34px;
-    line-height: 61px;
+    font-size: 160%;
+    line-height: 235%;
     color: #FFFFFF;
 }
 
 .botao2{
     position: absolute;
-    width: 200px;
-    height: 112px;
-    left: 965px;
-
+    width: 12%;
+    height: 16%;
+    left: 74.5%;
     text-align: center;
-    top: 530px;
+    top: 80%;
     background: rgba(92, 128, 1, 0.88);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
 }
 
 .textobt2{
-    top: 3px;
+    top: 1.5%;
     position: absolute;
-    height: 110px;
+    width: 100%;
+    height: auto;
     font-family: Jost;
     font-style: normal;
     font-weight: 300;
-    font-size: 34px;
-    line-height: 51px;
+    font-size: 160%;
+    line-height: 195%;
     color: #FFF3F3;
 }
 

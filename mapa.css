@@ -53,6 +53,7 @@ li a{
     color: #5C8001;
     text-decoration: none;
     font-family: Jost;
+    font-size: 20px;
 }
 
 .container{
@@ -75,7 +76,7 @@ li a{
     line-height: 49px;
     text-align: center;
 
-    color: #FFFFFF;
+    color: #f07907;
 }
 
 .pin{
