@@ -14,20 +14,11 @@
         <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB0bW9wweKavZygNsWciNLzcrotfSQKh4 "> </script>
         <script type="text/javascript">
-            function initialize() {
-                var mapOptions = {
-                center: new google.maps.LatLng(-23.552559, -46.625561),
-                zoom: 13,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-                var map = new google.maps.Map(document.getElementById("map_canvas"),
-                    mapOptions);
+            var locations = [
+            ];
 
-                function carregarPontos(id){
-                    var locations = [
-                        ['1. Minha casa', -23.529431, -46.576690],
-                    ];
-                    if(id=="vegan"){
+            function defineLoc(id){
+                if(id=="vegan"){
                         locations = [
                             ["Purana.co", -23.561705,-46.681878,"$$",4],
                             ["Homa", -23.566415,-46.688855,"$$$",4.5],
@@ -45,18 +36,18 @@
                     }
                     if(id=="gluten"){
                         locations = [
-                            ["Tomyam", -23,565,447, -46,661,195, "$$$", 4],
-	                        ["Dona Vitamina", -23,564,563, -46,683,899, "$$", 4.5],
-	                        ["Le Manjue Organique - Jardins", -23,564,846, -46,669,558, "$$$", 4.5],
-	                        ["Vila das Rosas - Pinheiros", -23,560,822, -46,696,360, "$$$", 4.5],
-	                        ["Manai Gastronomia", -23,530,190, -46,734,457, "$$", 4.5],
-	                        ["Supra di Mauro Maia", -23,588,122, -46,679,296, "$$$", 4.5],
-	                        ["Recanto Vegetariano", -23,608,352, -46,692,249, "$$", 4.5],
-	                        ["Barão Natural", -23,547,352, -46,572,053, "$", 4],
-	                        ["Vegg's Restaurante", -23,601,381, -46,636,164, "$", 4.5],
-	                        ["Casa Prema", -23,570,964, -46,693,134, "$", 4.5],
-	                        ["Ají Inspiração Peruana", -23,564,064, -46,683,246, "$", 4.5],
-	                        ["Vila Salute - Emporio & Rotisserie", -23,561,583, -46,690,238, "$", 4.5]
+                            ["Tomyam", -23.565447, -46.661195, "$$$", 4],
+	                        ["Dona Vitamina", -23.564563, -46.683899, "$$", 4.5],
+	                        ["Le Manjue Organique - Jardins", -23.564846, -46.669558, "$$$", 4.5],
+	                        ["Vila das Rosas - Pinheiros", -23.560822, -46.696360, "$$$", 4.5],
+	                        ["Manai Gastronomia", -23.530190, -46.734457, "$$", 4.5],
+	                        ["Supra di Mauro Maia", -23.588122, -46.679296, "$$$", 4.5],
+	                        ["Recanto Vegetariano", -23.608352, -46.692249, "$$", 4.5],
+	                        ["Barão Natural", -23.547352, -46.572053, "$", 4],
+	                        ["Vegg's Restaurante", -23.601381, -46.636164, "$", 4.5],
+	                        ["Casa Prema", -23,570964, -46.693134, "$", 4.5],
+	                        ["Ají Inspiração Peruana", -23.564064, -46.683246, "$", 4.5],
+	                        ["Vila Salute - Emporio & Rotisserie", -23.561583, -46.690238, "$", 4.5]
                         ];
                     }
                     if(id=="lactose"){
@@ -73,34 +64,48 @@
                     }
                     if(id=="diabetes"){
                         locations = [
-                            ["Buttina", -23,631,609, -46,737,084, "$$", 4],
-                            ["B.LEM Portuguese Bakery", -23,564,033, -46,683,389, "$", 4.5],
-                            ["Amor aos pedaços", -23,594,128, -46.6329654, "$$$", 5],
-                            ["Zucco Jardins", -23,565,269, -46,669,785, "$$$", 4],
-                            ["Suave Sabor", -23,549,089, -46,560,688, "$", 4.5],
-                            ["Bendito Frio", -23,602,653, -46,668,590, "$", 4]
+                            ["Buttina", -23.631609, -46.737084, "$$", 4],
+                            ["B.LEM Portuguese Bakery", -23.564,033, -46.683,389, "$", 4.5],
+                            ["Amor aos pedaços", -23.594128, -46.6329654, "$$$", 5],
+                            ["Zucco Jardins", -23.565269, -46.669785, "$$$", 4],
+                            ["Suave Sabor", -23.549089, -46.560688, "$", 4.5],
+                            ["Bendito Frio", -23.602653, -46.668590, "$", 4]
                         ];
                     }
                     if(id=="feiras"){
                         locations = [
-                            ["VILA FORMOSA",-23558733,-46550164,"TV RUA PRETORIA"],
-                            ["PRACA SANTA HELENA",-23584852,-46574716,"RUA OLIVEIRA GOUVEIA"],
-                            ["CONCORDIA",-23536131,-46610332,"TV RUA BRESSER"],
-                            ["VILA NOVA GRANADA",-23520880,-46513450,"RUA OLIVIA DE OLIVEIRA"],
-                            ["PARQUE SAVOY CITY",-23568665,-46485000,"RUA DR CELSO PACHECO BETIM",],
-                            ["MAR PAULISTA",-23691790,-46659953,"ESTRADA DO ALVARENGA"],
-                            ["CRUZ DAS ALMAS",-23481683,-46701030,"AV ELISIO TEIXEIRA LEITE"],
-                            ["LAJEADO",-23523125,-46426341,"RUA JOSE MARTINS DOS SANTOS",],
-                            ["ALTO DAS PERDIZES",-23539369,-46673057,"PONTF.UNIVERSIDADE CATOLICA"],
-                            ["MARIA CARLOTA", -23530784,-46527190,"LOC AV AMADOR BUENO DA VEIGA"],
-                            ["CECILIA ITER",-23521470,-46434970,"P FINAL ON VILA PROGRESSO"],
-                            ["VILA SONIA",-23592640,-46731043,"PROXIMO DISTRITO POLICIAL"],
-                            ["COHAB FERNAO DIAS",-23486440,-46569768,"ALONSO P B AVENTURA DE SOUZA"],
-                            ["VILA OLIVIERI",-23645941,-46594968,"RUA CARLA LIVIERO"],
-                            ["COCAIA",-23752316,-46681941,"RUA CAMPO DO ARAVIL"]
+                            ["VILA FORMOSA",-23.558733,-46.550164,"TV RUA PRETORIA"],
+                            ["PRACA SANTA HELENA",-23.584852,-46.574716,"RUA OLIVEIRA GOUVEIA"],
+                            ["CONCORDIA",-23.536131,-46.610332,"TV RUA BRESSER"],
+                            ["VILA NOVA GRANADA",-23.520880,-46.513450,"RUA OLIVIA DE OLIVEIRA"],
+                            ["PARQUE SAVOY CITY",-23.568665,-46.485000,"RUA DR CELSO PACHECO BETIM",],
+                            ["MAR PAULISTA",-23.691790,-46.659953,"ESTRADA DO ALVARENGA"],
+                            ["CRUZ DAS ALMAS",-23.481683,-46.701030,"AV ELISIO TEIXEIRA LEITE"],
+                            ["LAJEADO",-23.523125,-46.426341,"RUA JOSE MARTINS DOS SANTOS",],
+                            ["ALTO DAS PERDIZES",-23.539369,-46.673057,"PONTF.UNIVERSIDADE CATOLICA"],
+                            ["MARIA CARLOTA", -23.530784,-46.527190,"LOC AV AMADOR BUENO DA VEIGA"],
+                            ["CECILIA ITER",-23.521470,-46.434970,"P FINAL ON VILA PROGRESSO"],
+                            ["VILA SONIA",-23.592640,-46.731043,"PROXIMO DISTRITO POLICIAL"],
+                            ["COHAB FERNAO DIAS",-23.486440,-46.569768,"ALONSO P B AVENTURA DE SOUZA"],
+                            ["VILA OLIVIERI",-23.645941,-46.594968,"RUA CARLA LIVIERO"],
+                            ["COCAIA",-23.752316,-46.681941,"RUA CAMPO DO ARAVIL"]
                         ];
                     }
-                
+                    initialize();
+                    console.log(locations.length);
+            }
+
+            function initialize() {
+                var mapOptions = {
+                center: new google.maps.LatLng(-23.552559, -46.625561),
+                zoom: 11,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                var map = new google.maps.Map(document.getElementById("map_canvas"),
+                    mapOptions);
+
+                function carregarPontos(){
+                    
                     for (i = 0; i < locations.length; i++) {
                         marker = new google.maps.Marker({
                         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -116,6 +121,7 @@
                         });
                     }
                 }
+                carregarPontos();
             }
             
         </script>
@@ -131,23 +137,23 @@
             <div class="container"> 
 
                 <h2 class="title">O que você está procurando? </h2>
-                <a href="#" onclick="carregarPontos('feiras')"> 
+                <a href="#" onclick="defineLoc('feiras')"> 
                     <img src="imgs/laranja escuro.png" style="top: 200px;" class="pin"> 
                     <h3 style="top: 180px;" class="escrito"> Feiras livres </h3> 
                 </a>
-                <a href="#" onclick="carregarPontos('vegan')"> 
+                <a href="#" onclick="defineLoc('vegan')"> 
                     <img src="imgs/laranja claro.png" style="top: 280px;" class="pin">
                     <h3 style="top: 260px;" class="escrito"> Restaurantes veganos </h3>
                 </a>
-                <a href="#" onclick="carregarPontos('gluten')">
+                <a href="#" onclick="defineLoc('gluten')">
                     <img src="imgs/amarelo.png" style="top: 360px;" class="pin">
                     <h3 style="top: 340px;" class="escrito"> Para celíacos </h3>
                 </a>
-                <a href="#" onclick="carregarPontos('diabetes')">
+                <a href="#" onclick="defineLoc('diabetes')">
                     <img src="imgs/verde claro.png" style="top: 440px;" class="pin">
                     <h3 style="top: 420px;" class="escrito"> Para diabéticos </h3>
                 </a>
-                <a href="#" onclick="carregarPontos('lactose')">
+                <a href="#" onclick="defineLoc('lactose')">
                     <img src="imgs/verde escuro.png" style="top: 520px;" class="pin">
                     <h3 style="top: 500px;" class="escrito"> Para intolerantes à lactose </h3>
                 </a>
