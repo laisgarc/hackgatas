@@ -53,10 +53,11 @@ li a{
     color: #5C8001;
     text-decoration: none;
     font-family: Jost;
+    font-size: 20px;
 }
 
 .container{
-
+    height:auto;
    font-family: Jost;
 }
 
@@ -75,22 +76,22 @@ li a{
     line-height: 49px;
     text-align: center;
 
-    color: #FFFFFF;
+    color: #f07907;
 }
 
 .pin{
     position: absolute;
     width: 40px;
-    height: 60px;
-    left: 54px;
-    top: 320px;
+    height: auto;
+    left: 5%;
+    top: 32%;
 }
 
 .escrito{
     position: absolute;
     width: 214px;
     height: 29px;
-    left: 98px;
+    left: 8%;
     top: 380px;
 
     @font-face {
@@ -98,11 +99,9 @@ li a{
         src: url(fonts.googleapis.com/css?family=Josefin+Sans);
     }
 
-    
-
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 36px;
     text-align: center;
     color: #000000;
@@ -130,4 +129,5 @@ p {
     .pin {
         left: 40px;
     }
-  }
+    
+}

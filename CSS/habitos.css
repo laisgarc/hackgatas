@@ -1,23 +1,99 @@
 body {
-   
-    background-color:  #E5E5E5;
-    font-family: Helvetica, arial, sans-serif;
+    background-color:  #E5E5E5; 
     color: #332D2D;
+    font-family:Jost;
+    font-style: normal;
+}
+
+.navbar{
+    
+    margin: 1%;
+}
+.fas, .fa{
+    color: #5c8001;
+    position: absolute;
+    font-size:25px;
+
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+    text-decoration: none;
+}
+
+li a{
+    padding-left: 50px;
+    display:block;
+    margin-top: 2px;
+    color: #5C8001;
+    
     @font-face {
         font-family: Jost;
         src: url(indestructibletype.com/fonts/Jost.css);
     }
-
-    font-style: normal;
-    font-weight: normal;
+    text-decoration: none;
+    font-size: 20px;
 }
+
+.fas, .fa{
+    color: #5c8001;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.navbar{
+    margin-top:3%;
+    margin: 1%;
+}
+
+a{
+    text-decoration: none !important;
+    color: #5c8011; 
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    padding-left: 50px;
+    display:inline-block;
+    margin-top: 2px;
+    color: #5C8001;
+    text-decoration: none;
+    font-family: Jost;
+}
+
 
 .logo {
     position: absolute;
     width: 190px;
     height: 190px;
-    left: 1000px;
-    top: 10px;
+    left: 80%;
+    top: 50px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-width: 50%;
+    margin: auto;
 }
 
 .card {
@@ -47,12 +123,12 @@ p {
 
 .seta {
     position: relative;
-    width: 50px;
-    height: 50px;
-    left: 15px;
-    top: 20px;
+    height: 40px;
+    margin: auto;
+    z-index: 2;
 
-    border: 3px
+    border: 3px;
+    cursor: pointer;
 }
 
 .botao{
@@ -66,4 +142,10 @@ p {
     font-size: x-large;
     text-decoration: none;
     color: #332D2D;
+}
+
+@media (max-width: 992px) {
+    .logo {
+        left: 70%;
+    }
 }

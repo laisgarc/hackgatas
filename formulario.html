@@ -23,6 +23,17 @@
 
     <body>
         <div class='container'>
+            
+            <div class="navbar"> 
+                <a href="index.html"> <i class="fas fa-angle-left"></i> </a>
+                <ul>
+                    <li> <a style="text-decoration: none; color: #5c8011;" href="index.html"> HOME </a></li>
+                    <li> <a style="text-decoration: none; color: #5c8011;" href="mapa.html"> MAPA </a></li>
+                    <li> <a style="text-decoration: none; color: #5c8011;" href="perfis.html"> PERFIS E COLETIVOS </a></li>
+                    <li> <a style="text-decoration: none; color: #5c8011;" href="habitos.html"> INFORMAÇÕES </a></li>
+                </ul>
+            </div>
+
             <br><br>
             <h1 class='text-center'>Avalie seus hábitos e entenda<br> o que eles significam</h1></br>
             <p>O algoritmo de cálculo de respostas será validado por uma nutricionista.</p>
@@ -36,41 +47,41 @@
       id="bootstrapForm"
       method="POST">
     <fieldset>
-        <h2>Alimentação<br><small></small></h2>
+        <h2 style="font-family: Jost;">Alimentação<br><small></small></h2>
     </fieldset>
 
     <!-- Field type: "choices" id: "523344434" -->
     <fieldset>
-        <legend for="523344434">Quantas horas em média de sono você tem por dia?</legend>
+        <legend for="523344434" style="font-family: Jost;">Quantas horas em média de sono você tem por dia?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="horasSono" value="4" required>
-                    Mais de 9h por dia
+                    <h4 class="texto">Mais de 9h por dia</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="horasSono" value="3" required>
-                    8-9 horas
+                    <h4 class="texto"> 8-9 horas </h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="horasSono" value="2" required>
-                    7-8 horas
+                    <h4 class="texto">7-8 horas</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="horasSono" value="1" required>
-                    6-7 horas
+                    <h4 class="texto">6-7 horas</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="horasSono" value="0" required>
-                    Menos de 6h por dia
+                    <h4 class="texto">Menos de 6h por dia</h4>
                 </label>
             </div>
             
@@ -80,30 +91,30 @@
 
     <!-- Field type: "choices" id: "1573079798" -->
     <fieldset>
-        <legend for="1573079798">Você toma café da manhã?</legend>
+        <legend for="1573079798" style="font-family: Jost;">Você toma café da manhã?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="cafeDaManha" value="3" required>
-                    Todos os dias
+                    <h4 class="texto">Todos os dias</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="cafeDaManha" value="2" required>
-                    As vezes
+                    <h4 class="texto">As vezes</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="cafeDaManha" value="1" required>
-                    Só um café
+                    <h4 class="texto">Só um café</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="cafeDaManha" value="0" required>
-                    Nunca
+                    <h4 class="texto">Nunca</h4>
                 </label>
             </div>
             
@@ -113,30 +124,30 @@
 
     <!-- Field type: "choices" id: "104497541" -->
     <fieldset>
-        <legend for="104497541">Quantas refeições você faz por dia?</legend>
+        <legend for="104497541" style="font-family: Jost;">Quantas refeições você faz por dia?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="quantRefeicoes" value="3" required>
-                    3 ou mais
+                    <h4 class="texto">3 ou mais</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="quantRefeicoes" value="2" required>
-                    2 por dia
+                    <h4 class="texto">2 por dia</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="quantRefeicoes" value="1" required>
-                    Não regularmente
+                    <h4 class="texto">Não regularmente</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="quantRefeicoes" value="0" required>
-                    Passo fome
+                    <h4 class="texto">Passo fome</h4>
                 </label>
             </div>
         </div>
@@ -145,30 +156,30 @@
 
     <!-- Field type: "choices" id: "1297871975" -->
     <fieldset>
-        <legend for="1297871975">Quantas porções de frutas e verduras você consome por dia?</legend>
+        <legend for="1297871975" style="font-family: Jost;">Quantas porções de frutas e verduras você consome por dia?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="frutasVerduras" value="3" required>
-                    5 porções ou mais por dia
+                    <h4 class="texto">5 porções ou mais por dia</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="frutasVerduras" value="2" required>
-                    2-4 porções diárias
+                    <h4 class="texto">2-4 porções diárias</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="frutasVerduras" value="1" required>
-                    1 porção por dia, às vezes
+                    <h4 class="texto">1 porção por dia, às vezes</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="frutasVerduras" value="0" required>
-                    Não como verduras e frutas
+                    <h4 class="texto">Não como verduras e frutas</h4>
                 </label>
             </div>
         </div>
@@ -177,42 +188,42 @@
 
     <!-- Field type: "choices" id: "2003662499" -->
     <fieldset>
-        <legend for="2003662499">Qual é a sua principal fonte de gordura?</legend>
+        <legend for="2003662499" style="font-family: Jost;">Qual é a sua principal fonte de gordura?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="gorduras" value="5" required>
-                    Nozes, azeite de oliva e peixes
+                    <h4 class="texto">Nozes, azeite de oliva e peixes</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="gorduras" value="4" required>
-                    Poucas gorduras, não tanto saturadas (ex: manteiga e laticinios)
+                    <h4 class="texto">Poucas gorduras, não tanto saturadas (ex: manteiga e laticinios)</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="gorduras" value="3" required>
-                    Gordura moderada, não tanto saturadas
+                    <h4 class="texto">Gordura moderada, não tanto saturadas</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="gorduras" value="2" required>
-                    Dieta com baixos carboidratos e gorduras saturadas
+                    <h4 class="texto">Dieta com baixos carboidratos e gorduras saturadas</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="gorduras" value="1" required>
-                    Muita carne, leite e queijo
+                    <h4 class="texto">Muita carne, leite e queijo</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="gorduras" value="0" required>
-                    Gorduras, frituras e pratos pré-cozidos
+                    <h4 class="texto">Gorduras, frituras e pratos pré-cozidos</h4>
                 </label>
             </div>
         </div>
@@ -221,30 +232,30 @@
 
     <!-- Field type: "choices" id: "1006370923" -->
     <fieldset>
-        <legend for="1006370923">Você tem o hábito de comer comidas processadas?</legend>
+        <legend for="1006370923" style="font-family: Jost;">Você tem o hábito de comer comidas processadas?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="processados" value="3" required>
-                    Nenhum alimento refinado
+                    <h4 class="texto">Nenhum alimento refinado</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="processados" value="2" required>
-                    Alguns alimentos refinados
+                    <h4 class="texto">Alguns alimentos refinados</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="processados" value="1" required>
-                    Muitos alimentos refinados: pão, arroz, cereais
+                    <h4 class="texto">Muitos alimentos refinados: pão, arroz, cereais</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="processados" value="0" required>
-                    Muitos alimentos refinados: açúcar, refrigerantes, doces, lanches...
+                    <h4 class="texto">Muitos alimentos refinados: açúcar, refrigerantes, doces, lanches...</h4>
                 </label>
             </div>
         </div>
@@ -253,42 +264,43 @@
 
     <!-- Field type: "choices" id: "155016371" -->
     <fieldset>
-        <legend for="155016371">Quanto alcool você ingere por dia em média?</legend>
+        <legend for="155016371" style="font-family: Jost;">Quanto alcool você ingere por dia em média?</legend>
         <div class="form-group">
             <div class="radio">
                 <label>
                     <input type="radio" name="alcool" value="5" required>
-                    Nada
+                    <h4 class="texto">Nada</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="alcool" value="4" required>
-                    Uma bebida alcóolica por dia, no máximo
+                    <h4 class="texto">Uma bebida alcóolica por dia, no máximo</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="alcool" value="3" required>
-                    Duas bebidas alcóolicas por dia
+                    <h4 class="texto">Duas bebidas alcóolicas por dia</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="alcool" value="2" required>
-                    3 bebidas com álcool por dia
+                    <h4 class="texto">3 bebidas com álcool por dia</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="alcool" value="1" required>
-                    3-6 bebidas com álcool por dia
+                    <h4 class="texto">3-6 bebidas com álcool por dia</h4>
                 </label>
             </div>
             <div class="radio">
                 <label>
                     <input type="radio" name="alcool" value="0" required>
-                    Mais de 6 bebidas diárias
+                    <h4 class="texto">Mais de 6 bebidas diárias</h4>
+        
                 </label>
             </div>
         </div>
