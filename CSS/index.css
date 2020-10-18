@@ -73,21 +73,28 @@ body {
     left: 20%;
     top: -8%;*/
 
-    position: absolute;
+    /*position: absolute;
     width: 25%;
     height: auto;
     left: 20%;
     top: 10%;
+    text-align: center;*/
+
+    /*position: relative;
+    left: 25%;*/
+
     text-align: center;
+    margin: auto;
+    display: grid;
 }
 
 .frase{
-    position: absolute;
+    /*position: absolute;
     width: 40%;
     height: auto;
     left: 52%;
     top: 18%;
-    text-align: center;
+    text-align: center;*/
 
     font-family: Jost;
     font-style: normal;
@@ -98,12 +105,12 @@ body {
 }
 
 .descricao{
-    position: absolute;
+    /*position: absolute;
     width: 55%;
     height: 200%;
     left: 8%;
     top: 63%;
-    bottom:0;
+    bottom:0;*/
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
@@ -123,12 +130,13 @@ body {
     font-family: Jost;
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 40px;
     line-height: 235%;
     color: #FFFFFF;
     text-decoration: none;
     margin-bottom: 20px;
     margin-top: 30px;
+    padding: 2%;
 }
 
 .botao2{
@@ -140,18 +148,21 @@ body {
     font-family: Jost;
     font-style: normal;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 40px;
     line-height: 195%;
     text-decoration:none ;
     color: #FFF3F3;
+    padding: 2%;
 }
 
 .botoes {
-    position: absolute;
+    /*position: absolute;
     left: 70%;
     top: 67%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+    margin: auto;
+    text-align: center;
 }
 
 
@@ -199,4 +210,12 @@ body {
     }
 }
 
+@media (min-width: 500px) {
+    .segunda-coluna {
+        margin-top: 10%;
+    }
 
+    .botoes {
+        margin-top: 35%;
+    }
+}
