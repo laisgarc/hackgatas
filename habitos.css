@@ -56,7 +56,12 @@ p {
 }
 
 .botao{
+    text-align: center;
+    margin: auto;
+    display: grid;
+
     border: none;
     background-color: #F07907;
     border-radius: 8px;
+    font-size: x-large;
 }
