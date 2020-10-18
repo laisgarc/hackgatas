@@ -62,9 +62,22 @@ li a{
     font-size: 48px;
     line-height: 69px;
     text-align: center;
-    margin-left:70px;
+    margin-left:0px;
     margin-top:4%;
     color: #F07907;
+}
+.logo{
+    margin-top:0 px;
+    margin-left:30px;
+    width: 140px;
+    height: 135px;
+}
+.gif{
+    margin-top:230px;
+    margin-left:0px;
+    margin-right: 30px;
+    width: 210px;
+    height: 300px;
 }
 .perfil{
     margin-top:10.5%;
@@ -87,7 +100,7 @@ li a{
     line-height: 36px;
     letter-spacing: 0em;
     text-align: center;
-    margin-left: 90px;
+    margin-left: 0px;
     color: #332D2D;
 }
 .links{
@@ -97,13 +110,13 @@ li a{
 .favela{
     width: 404px;
     height: 162px;
-    margin-left: 200px;
+    margin-left: 120px;
     top: 264px;
 }
 .brilhar{
-    width: 536px;
+    width: 404px;
     height: 196px;
-    margin-left: 150px;
+    margin-left: 120px;
     top: 264px;
 }
 .dicas{
@@ -121,9 +134,9 @@ li a{
     grid-template-rows: auto;
 }
 .carinhas{
-    margin-left:110px;
-    width: 130px;
-    height: 123px;
+    margin-left:60px;
+    width: 150px;
+    height: 150px;
     border-radius: 2000px;
 }
 .menores{
@@ -134,11 +147,13 @@ li a{
     line-height: 36px;
     text-align: center;
     color: #332D2D;
+    text-decoration: none;
+    margin-right: 50px;
 }
 .carinhas2{
-    margin-left:110px;
-    width: 130px;
-    height: 123px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 2000px;
 }
 .menores2{
@@ -149,4 +164,6 @@ li a{
     line-height: 36px;
     text-align: center;
     color: #332D2D;
+    text-decoration: none;
+    margin-right: 60px;
 }

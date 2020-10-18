@@ -56,10 +56,10 @@ li a{
     font-size: 20px;
 }
 
-.container{
+/*.container{
     height:auto;
    font-family: Jost;
-}
+}*/
 
 
 .title{
@@ -148,4 +148,16 @@ p {
         margin-left: 30%;
     }
 
+}
+
+@media (max-width:400px){
+    .filtros {
+        padding-left: 50px;
+        display:inline-block;
+        margin-top: 2px;
+        color: #5C8001;
+        text-decoration: none;
+        font-family: Jost;
+        font-size: 20px;
+    }
 }
