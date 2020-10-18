@@ -50,8 +50,13 @@ li a{
 }
 
 .navbar{
-
+    margin-top:3%;
     margin: 1%;
+}
+
+a{
+    text-decoration: none !important;
+    color: #5c8011; 
 }
 
 ul{
