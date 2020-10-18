@@ -22,5 +22,4 @@ $insigth = [
 $_SESSION['insigth'] = $insigth;
 header('Location: analisado.php');
 exit();
-
 ?>
