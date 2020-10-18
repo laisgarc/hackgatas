@@ -1,6 +1,6 @@
 
 body {
-   
+    align-items: center;
     background-color:  #fbb02d;
     font-family: Helvetica, arial, sans-serif;
     color: #5C8001;
@@ -11,6 +11,13 @@ body {
 
     font-style: normal;
     font-weight: normal;
+}
+
+.fas, .fa{
+    color: #5c8001;
+    position: absolute;
+    font-size:25px;
+
 }
 
 .general-container{
@@ -36,10 +43,10 @@ body {
 }
 
 .logo{
-    margin-top: 2%;
+    margin-top: 5%;
     position: absolute;
-    width: 453px;
-    height: 446px;
+    width: 400px;
+    height: 400px;
     left: 230px;
     top: -42px;
 }
@@ -55,35 +62,35 @@ body {
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 45px;
     line-height: 81px;
     color: #FFFFFF;
 }
 
 .descricao{
     position: absolute;
-    width: 774px;
-    height: 287px;
-    left: 48px;
-    top: 430px;
-    
+    width: 700px;
+    height: 240px;
+    left: 118px;
+    top: 415px;
+    bottom:0;
     font-family: Jost;
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 69px;
     text-align: center;
-    
     
     color: #5C8001;
 }
 
 .botao1{
     position: absolute;
-    width: 340px;
-    height: 75px;
-    left: 902px;
+    width: 250px;
+    height: 65px;
+    left: 942px;
     top: 437px;
+    bottom: 100px;
     background: rgba(92, 128, 1, 0.88);
     text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -92,37 +99,38 @@ body {
 
 .textobt1{
     position: absolute;
-    width: 340px;
+    width: 250px;
     height: 56px;
     font-family: Jost;
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
-    line-height: 71px;
+    font-size: 34px;
+    line-height: 61px;
     color: #FFFFFF;
 }
 
 .botao2{
     position: absolute;
-    width: 296px;
-    height: 122px;
-    left: 921px;
+    width: 200px;
+    height: 112px;
+    left: 965px;
+
     text-align: center;
-    top: 561px;
+    top: 530px;
     background: rgba(92, 128, 1, 0.88);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
 }
 
 .textobt2{
+    top: 3px;
     position: absolute;
-    width: 229px;
-    height: 124px;
+    height: 110px;
     font-family: Jost;
     font-style: normal;
     font-weight: 300;
-    font-size: 38px;
-    line-height: 61px;
+    font-size: 34px;
+    line-height: 51px;
     color: #FFF3F3;
 }
 

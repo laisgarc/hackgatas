@@ -1,0 +1,87 @@
+body {
+    align-items: center;
+    background-color:  #e5dbaf;
+    font-family: Helvetica, arial, sans-serif;
+    color: #5C8001;
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+.fas, .fa{
+    color: #5c8001;
+    position: absolute;
+    font-size:25px;
+
+}
+
+.general-container{
+    background-color:#e5dbaf;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height: auto;
+}
+
+.navbar{
+
+    margin: 1%;
+}
+
+
+.container{
+
+   font-family: Jost;
+}
+
+
+.title{
+    position: absolute;
+    width: 334px;
+    height: 97px;
+    left: 21px;
+    top: 60px;
+
+    font-family: Jost;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.pin{
+    position: absolute;
+    width: 40px;
+    height: 60px;
+    left: 54px;
+    top: 320px;
+}
+
+.escrito{
+    position: absolute;
+    width: 214px;
+    height: 29px;
+    left: 98px;
+    top: 380px;
+
+    @font-face {
+        font-family: Josefin Sans Std;
+        src: url(fonts.googleapis.com/css?family=Josefin+Sans);
+    }
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+
+}
+

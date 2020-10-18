@@ -1,0 +1,68 @@
+﻿{
+    "Planilha1": [
+        {
+            "ID": "1",
+            "NOME": "Grão Fino",
+            "LAT": "-23,581,292",
+            "LONG": "-46,677,041",
+            "PRECO": "$$",
+            "AVALIACAO": "4"
+        },
+        {
+            "ID": "2",
+            "NOME": "Prá lá de bom",
+            "LAT": "-23,608,864",
+            "LONG": "-46,663,779",
+            "PRECO": "$$",
+            "AVALIACAO": "4.5"
+        },
+        {
+            "ID": "3",
+            "NOME": "Isabela Akkari",
+            "LAT": "-23,593,131",
+            "LONG": "-46,676,598",
+            "PRECO": "$$$",
+            "AVALIACAO": "4.5"
+        },
+        {
+            "ID": "4",
+            "NOME": "Casa Santa Luzia",
+            "LAT": "-23,564,454",
+            "LONG": "-46,665,782",
+            "PRECO": "$$$$",
+            "AVALIACAO": "5"
+        },
+        {
+            "ID": "5",
+            "NOME": "Healthy Bites",
+            "LAT": "-23,594,583",
+            "LONG": "-46,677,056",
+            "PRECO": "$$$$",
+            "AVALIACAO": "4"
+        },
+        {
+            "ID": "6",
+            "NOME": "Lilóri",
+            "LAT": "-23,565,121",
+            "LONG": "-46,661,542",
+            "PRECO": "$$$",
+            "AVALIACAO": "4"
+        },
+        {
+            "ID": "7",
+            "NOME": "Tea Connection",
+            "LAT": "-23,565,512",
+            "LONG": "-46,664,366",
+            "PRECO": "$$",
+            "AVALIACAO": "5"
+        },
+        {
+            "ID": "8",
+            "NOME": "Urban Remedy",
+            "LAT": "-23,562,511",
+            "LONG": "-46,669,529",
+            "PRECO": "$$$",
+            "AVALIACAO": "4.5"
+        }
+    ]
+}
