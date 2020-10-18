@@ -29,13 +29,33 @@ body {
 }
 
 .navbar{
-
     margin: 1%;
 }
 
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    color: #5c8001;
+    min-width: 160px;
+    font-family: Jost;
+    font-weight: normal;
+    font-size: 20px;
+    padding: 8px 12px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .container{
-
     @font-face {
         font-family: Jost;
         src: url(indestructibletype.com/fonts/Jost.css);
