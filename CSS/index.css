@@ -66,12 +66,19 @@ body {
 }
 
 .logo{
-    margin-top: 5%;
+    /*margin-top: 5%;
     position: absolute;
     width: 30%;
     height: auto;
     left: 20%;
-    top: -8%;
+    top: -8%;*/
+
+    position: absolute;
+    width: 25%;
+    height: auto;
+    left: 20%;
+    top: 10%;
+    text-align: center;
 }
 
 .frase{
