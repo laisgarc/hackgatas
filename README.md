@@ -2,4 +2,4 @@
 
 ## Comer Melhor
 
-Visite https://comermelhor.tk
+Visite https://comamelhor.tk
