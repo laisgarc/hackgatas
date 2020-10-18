@@ -39,3 +39,7 @@ body {
     border-radius: 8px;
     font-size: large;
 }
+p{
+    text-align: center;
+    font-size: medium;
+}
