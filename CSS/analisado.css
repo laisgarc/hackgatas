@@ -1,10 +1,9 @@
 body {
    
     background-color:  #e5dbaf;
-    font-family: Helvetica, arial, sans-serif;
     color: #332D2D;
     @font-face {
-        font-family: Jost;
+        font-family: Jost !important;
         src: url(indestructibletype.com/fonts/Jost.css);
     }
 
@@ -12,7 +11,14 @@ body {
     font-weight: normal;
 }
 
+.text-center{
+    font-family: Jost !important;
+}
+
+
+
 h1 {
+    font-family: Jost;
     max-width: 50%;
     margin: auto;
 }
@@ -28,6 +34,12 @@ h1 {
     height: 190px;
     left: 75%;
     top: 50px;
+}
+
+
+
+.topico{
+    font-family: Jost !important;
 }
 
 .card {
@@ -56,10 +68,11 @@ h1 {
     top: 90%;
     left: 90%;
 
-    border: 3px
+    border: 3px;
 }
 
 p{
+    font-family: Jost !important;
     text-align: center;
     font-size: medium;
 }

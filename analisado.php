@@ -23,7 +23,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--Acabei de importar bootstrap-->
 
-    <link rel="stylesheet" href="CSS/analisado.css">
+    <link rel="stylesheet" href="css/analisado.css">
 </head>
 
 <body>
