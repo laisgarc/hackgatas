@@ -1,13 +1,13 @@
 <?php
 session_start();
 
-$horasSono = mysqli_real_escape_string($conexao, $_POST['horasSono']);
-$cafeDaManha = mysqli_real_escape_string($conexao, $_POST['cafeDaManha']);
-$quantRefeicoes = mysqli_real_escape_string($conexao, $_POST['quantRefeicoes']);
-$frutasVerduras = mysqli_real_escape_string($conexao, $_POST['frutasVerduras']);
-$gorduras = mysqli_real_escape_string($conexao, $_POST['email']);
-$processados = mysqli_real_escape_string($conexao, $_POST['processados']);
-$alcool = mysqli_real_escape_string($conexao, $_POST['alcool']);
+$horasSono = $_POST['horasSono'];
+$cafeDaManha = $_POST['cafeDaManha'];
+$quantRefeicoes = $_POST['quantRefeicoes'];
+$frutasVerduras = $_POST['frutasVerduras'];
+$gorduras = $_POST['email'];
+$processados = $_POST['processados'];
+$alcool = $_POST['alcool'];
 
 $insigth = [
     "horasSono" => $horasSono,

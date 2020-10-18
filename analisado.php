@@ -1,6 +1,7 @@
 <?php
     session_start();
     $insigths = $_SESSION['insigth'];
+    echo $insigths['horasSono'];
 ?>
 
 <!DOCTYPE html>
