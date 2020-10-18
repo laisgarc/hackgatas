@@ -20,7 +20,11 @@ html {
 
 @media (max-width: 992px) {
   .map {
-    height: 30rem;
+    height: 90%;
+    margin-top: 60%;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding-bottom: 15%;
   }
   .title h2 {
     font-size: 30px;
