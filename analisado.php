@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
     <meta charset="UTF-8">
-    <title>Avalie seus hábitos</title>
+    <title>Resultados</title>
 
     <!--Importando bootstrap-->
     <!-- Latest compiled and minified CSS -->
@@ -30,7 +30,6 @@
     <div class='container'>
         <br><br>
         <h1 class='text-center'>Seus resultados estão prontos!<br>Confira!</h1></br>
-        <p>O algoritmo de cálculo de respostas será validado por uma nutricionista.</p>
         <img class='logo' src='imgs/logo.png'>
         <br><br>
 
@@ -344,6 +343,7 @@
 
             <div class='col-sm-2'></div>
         </div>
+        <br><br><br>
 
     </div>
 
