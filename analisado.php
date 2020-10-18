@@ -1,7 +1,6 @@
 <?php
     session_start();
     $insigths = $_SESSION['insigth'];
-    echo $insigths['horasSono'];
 ?>
 
 <!DOCTYPE html>
@@ -29,6 +28,8 @@
 
 <body>
     <div class='container'>
+        <?php include_once('menu.html'); ?>
+
         <br><br>
         <h1 class='text-center'>Seus resultados estão prontos!<br>Confira!</h1></br>
         <img class='logo' src='imgs/logo.png'>
