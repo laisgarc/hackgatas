@@ -22,6 +22,10 @@ html {
   .map {
     height: 75%;
   }
+  .title h2 {
+    font-size: 30px;
+    left: 1px;
+  }
 }
 
 .map iframe {

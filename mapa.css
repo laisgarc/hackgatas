@@ -10,6 +10,8 @@ body {
 
     font-style: normal;
     font-weight: normal;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .fas, .fa{
@@ -85,3 +87,25 @@ body {
 
 }
 
+p {
+    text-align: right;
+    font-size: 10px;
+    margin-right: 15px;
+}
+
+@media (max-width: 992px) {
+
+    .title {
+      font-size: 30px;
+      left: 1px;
+    }
+
+    .escrito {
+        font-size: 25px;
+        left: 70px;
+    }
+
+    .pin {
+        left: 40px;
+    }
+  }
