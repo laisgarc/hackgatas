@@ -43,13 +43,3 @@ p{
     text-align: center;
     font-size: medium;
 }
-.navbar{
-    width:5%;
-    margin: 1%;
-}
-.fas, .fa{
-    color: #5c8001;
-    position: absolute;
-    font-size:25px;
-
-}
