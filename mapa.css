@@ -34,6 +34,26 @@ body {
     margin: 1%;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow: hidden;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    padding-left: 50px;
+    display:inline-block;
+    margin-top: 2px;
+    color: #5C8001;
+    text-decoration: none;
+    font-family: Jost;
+}
 
 .container{
 
@@ -77,6 +97,8 @@ body {
         font-family: Josefin Sans Std;
         src: url(fonts.googleapis.com/css?family=Josefin+Sans);
     }
+
+    
 
     font-style: normal;
     font-weight: 300;
