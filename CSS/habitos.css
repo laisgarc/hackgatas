@@ -1,0 +1,69 @@
+body {
+   
+    background-color:  #E5E5E5;
+    font-family: Helvetica, arial, sans-serif;
+    color: #332D2D;
+    @font-face {
+        font-family: Jost;
+        src: url(indestructibletype.com/fonts/Jost.css);
+    }
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+.logo {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 1000px;
+    top: 10px;
+}
+
+.card {
+    background-color: #F07907;
+}
+
+.form-card{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.topico {
+    background-color:  #E5E5E5;
+    border-radius: 10px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+p {
+    position: relative;
+    margin-left: 20px;
+}
+
+.seta {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 15px;
+    top: 20px;
+
+    border: 3px
+}
+
+.botao{
+    text-align: center;
+    margin: auto;
+    display: grid;
+
+    border: none;
+    background-color: #F07907;
+    border-radius: 8px;
+    font-size: x-large;
+    text-decoration: none;
+    color: #332D2D;
+}
