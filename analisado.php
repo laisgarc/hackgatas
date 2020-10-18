@@ -23,6 +23,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!--Acabei de importar bootstrap-->
 
+
+    <link rel="shortcut icon" href="imgs/logo.png">
     <link rel="stylesheet" href="css/analisado.css">
 </head>
 
