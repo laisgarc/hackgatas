@@ -100,6 +100,16 @@
                     initialize();
             }
 
+
+            
+            function contentLoc(nome, preço, estrelas){
+                if(estrelas !== undefined){
+                return nome + "<br/>" + preço + "<br/>" + estrelas + " estrelas";
+                }else{
+                    return nome + "<br/> referencia: " + preço;
+                }
+            }
+
             function initialize() {
                 var mapOptions = {
                 center: new google.maps.LatLng(-23.552559, -46.625561),
@@ -119,7 +129,7 @@
                         icon: icone
                         });
                         marker['infowindow'] = new google.maps.InfoWindow({
-                        content: locations[i][0]
+                        content: contentLoc(locations[i][0], locations[i][3], locations[i][4])
                         });
                         google.maps.event.addListener(marker, 'mouseover', function() {
                         this['infowindow'].open(map, this);
