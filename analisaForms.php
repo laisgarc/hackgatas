@@ -5,7 +5,7 @@ $horasSono = $_POST['horasSono'];
 $cafeDaManha = $_POST['cafeDaManha'];
 $quantRefeicoes = $_POST['quantRefeicoes'];
 $frutasVerduras = $_POST['frutasVerduras'];
-$gorduras = $_POST['email'];
+$gorduras = $_POST['gorduras'];
 $processados = $_POST['processados'];
 $alcool = $_POST['alcool'];
 
