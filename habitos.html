@@ -151,14 +151,14 @@
         <script type='text/javascript'>
             function mostraConteudo(id) {
                 classe = '.topico' + id + '-conteudo';
-                $(classe).show()
+                $(classe).slideDown()
                 $('.seta-para-baixo' + id).hide()
                 $('.seta-para-cima' + id).show()
             }
 
             function escondeConteudo(id) {
                 classe = '.topico' + id + '-conteudo';
-                $(classe).hide()
+                $(classe).slideUp()
                 $('.seta-para-baixo' + id).show()
                 $('.seta-para-cima' + id).hide()
             }
