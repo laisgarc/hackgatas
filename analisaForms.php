@@ -1,8 +1,6 @@
 <?php
 session_start();
 
-$sexo = mysqli_real_escape_string($conexao, $_POST['sexo']);
-$longevidade = mysqli_real_escape_string($conexao, $_POST['longevidade']);
 $horasSono = mysqli_real_escape_string($conexao, $_POST['horasSono']);
 $cafeDaManha = mysqli_real_escape_string($conexao, $_POST['cafeDaManha']);
 $quantRefeicoes = mysqli_real_escape_string($conexao, $_POST['quantRefeicoes']);
@@ -22,7 +20,7 @@ $insigth = [
 ];
 
 $_SESSION['insigth'] = $insigth;
-header('Location: resultadosForms.php');
+header('Location: analisado.php');
 exit();
 
 ?>
