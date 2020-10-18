@@ -16,6 +16,7 @@
         <script type="text/javascript">
             var locations = [
             ];
+            var icone = "";
 
             function defineLoc(id){
                 if(id=="vegan"){
@@ -32,6 +33,7 @@
                             ["Boteco Ouzar ",-23.602711,-46.612822,"$",5],
                             ["Boteco do Góis",-23.537771,-46.650262,"$",4]
                         ];
+                        icone = 'imgs/laranjinha.png';
                         
                     }
                     if(id=="gluten"){
@@ -49,6 +51,7 @@
 	                        ["Ají Inspiração Peruana", -23.564064, -46.683246, "$", 4.5],
 	                        ["Vila Salute - Emporio & Rotisserie", -23.561583, -46.690238, "$", 4.5]
                         ];
+                        icone = 'imgs/amarelosmall.png';
                     }
                     if(id=="lactose"){
                         locations = [
@@ -61,6 +64,7 @@
                             ["Tea Connection",-23.565512,-46.664366,"$$",5],
                             ["Urban Remedy",-23.562511,-46.669529,"$$$",4.5]
                         ];
+                        icone = 'imgs/verdesmall.png';
                     }
                     if(id=="diabetes"){
                         locations = [
@@ -71,6 +75,7 @@
                             ["Suave Sabor", -23.549089, -46.560688, "$", 4.5],
                             ["Bendito Frio", -23.602653, -46.668590, "$", 4]
                         ];
+                        icone = 'imgs/verdinho.png';
                     }
                     if(id=="feiras"){
                         locations = [
@@ -90,9 +95,19 @@
                             ["VILA OLIVIERI",-23.645941,-46.594968,"RUA CARLA LIVIERO"],
                             ["COCAIA",-23.752316,-46.681941,"RUA CAMPO DO ARAVIL"]
                         ];
+                        icone = 'imgs/laranjasmall.png';
                     }
                     initialize();
-                    console.log(locations.length);
+            }
+
+
+            
+            function contentLoc(nome, preço, estrelas){
+                if(estrelas !== undefined){
+                return nome + "<br/>" + preço + "<br/>" + estrelas + " estrelas";
+                }else{
+                    return nome + "<br/> referencia: " + preço;
+                }
             }
 
             function initialize() {
@@ -111,10 +126,10 @@
                         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
                         title: locations[i][0],
                         map: map,
-                        icon: 'imgs/marcador.png'
+                        icon: icone
                         });
                         marker['infowindow'] = new google.maps.InfoWindow({
-                        content: locations[i][0]
+                        content: contentLoc(locations[i][0], locations[i][3], locations[i][4])
                         });
                         google.maps.event.addListener(marker, 'mouseover', function() {
                         this['infowindow'].open(map, this);
