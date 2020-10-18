@@ -15,43 +15,30 @@ body{
     width:100%;
     height: auto;
 }
-.perfil{
-    @font-face {
-        font-family: Jost;
-        src: url(indestructibletype.com/fonts/Jost.css);
-    }
+.colunas{
+    display: inline-block;
+    justify-content: space-between;
+    width:100%;
+    height: auto;
 }
 .coletivos{
     /* Coletivos */
-
-
-    position: absolute;
-    width: 334px;
-    height: 97px;
-    left: 199px;
-    top: 78px;
-
-    font-family: 'Jost';
+    display:block;
+    border-radius: nullpx;
+    font-family: 'Jost',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
     line-height: 69px;
     text-align: center;
-
+    margin-left:70px;
     color: #F07907;
-    @font-face {
-        font-family: Jost;
-        src: url(indestructibletype.com/fonts/Jost.css);
-    }
 }
 .perfil{
     /* Perfis */
-    position: absolute;
-    width: 334px;
-    height: 97px;
-    left: 859px;
-    top: 70px;
-    font-family: Jost;
+    display:block;
+    border-radius: nullpx;
+    font-family: 'Jost', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 48px;
@@ -59,7 +46,7 @@ body{
     text-align: center;
     color: #F07907;
 }
-.textos{
+.textos{ 
     font-family: 'Josefin Sans', sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -67,4 +54,66 @@ body{
     line-height: 36px;
     letter-spacing: 0em;
     text-align: center;
+    margin-left: 90px;
+    color: #332D2D;
+}
+.links{
+    text-decoration: none;
+    color: #332D2D;
+}
+.favela{
+    width: 404px;
+    height: 162px;
+    margin-left: 200px;
+    top: 264px;
+}
+.brilhar{
+    width: 536px;
+    height: 196px;
+    margin-left: 150px;
+    top: 264px;
+}
+.dicas{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: #332D2D;
+}
+.rostos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+.carinhas{
+    margin-left:110px;
+    width: 130px;
+    height: 123px;
+    border-radius: 2000px;
+}
+.menores{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #332D2D;
+}
+.carinhas2{
+    margin-left:110px;
+    width: 130px;
+    height: 123px;
+    border-radius: 2000px;
+}
+.menores2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #332D2D;
 }
